@@ -128,7 +128,7 @@ ul
       left: 0;
       margin-top: 8px;
 }
-.row
+.row,.row-item
 {
       display: flex;
       flex-wrap: wrap;
@@ -595,7 +595,7 @@ h3.my-profession
 }
 .service .hs
 {
-      position: absolute;
+      position: fixed;
       width: calc(100% + 15px);
       height: 100%;
       left: -15px;
@@ -1024,6 +1024,7 @@ h3.my-profession
 
 
 
+
 @media (max-width:1199px)
 {
       .section .container
@@ -1094,6 +1095,30 @@ h3.my-profession
             flex: 0 0 100%;
             max-width: 100%;
       }
+
+      .pi .content .img-50 {
+            margin-top: 30px;
+            padding: 45px;
+      }
+
+}
+@media (max-width:570px){
+      .pi .content .s-50 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-top: 30px;
+      }
+
+      .pi .content .img-50 {
+            padding: 30px 60px 30px 60px;
+      }
+
+      .pi .content .img-100-g {
+            margin-top: 30px;
+            padding: 30px 60px 30px 60px;
+        }
+
+      
 }
 @media (max-width:531px)
 {
@@ -1101,6 +1126,31 @@ h3.my-profession
       {
             font-size: 75px;
       }
+}
+@media (max-width:425px)
+{
+      .row-info{
+            display: flex;
+            margin-left: 0;
+            margin-right: 0;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .about .about-content .personal-info .info-item p {
+            text-align: center;
+      }
+
+      .about .about-content .personal-info .info-item p span {
+            display: inline-block;
+      }
+
+      .about .about-content .personal-info .info-item {
+            flex: none;
+            max-width: none;
+      }
+      
 }
 @media (max-width:420px)
 {
